@@ -27,10 +27,31 @@ li {
     margin: 0 auto;
 }
 
+.container-fluid {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+}
+
 body {
     font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: $color-text;
+}
+
+.title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: $bg;
 }
