@@ -1,6 +1,6 @@
-@import 'vars';
-@import 'global';
-@import 'fonts';
+@import "vars";
+@import "global";
+@import "fonts";
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@
 .products__inner-btn {
     text-align: center;
     margin-bottom: 60px;
-    transition: all .3s;
+    transition: all 0.3s;
     button {
         padding: 12px 21px;
         font-size: 14px;
@@ -296,7 +296,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 30px;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .advantages__item-title {
@@ -304,9 +304,44 @@
     color: #fff;
     @include f500;
     font-size: 24px;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .advantages__item-text {
     font-size: 15px;
+}
+
+.author {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box {
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+    }
+    &__title {
+        margin-right: 45px;
+        max-width: 260px;
+        font-size: 29px;
+        line-height: 36px;
+        color: #fff;
+        span {
+            @include f700;
+        }
+    }
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        background-color: #fff;
+    }
 }
