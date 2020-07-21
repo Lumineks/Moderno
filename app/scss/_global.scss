@@ -76,6 +76,19 @@ body {
     flex: 0 0 auto;
 }
 
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
+    }
+}
+
 .breadcrumbs {
     &__inner {
         padding: 45px 0 40px;
