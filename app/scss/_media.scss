@@ -1,13 +1,54 @@
+@media (max-width: 1200px) {
+    .withdrawals__inner {
+        display: block;
+
+    }
+
+    .withdrawals__col {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .withdrawals__content-item {
+        max-width: 490px;
+    }
+}
+
 @media (max-width: 1150px) {
     .header__text {
         display: none;
     }
+
     .footer__inner {
         flex-wrap: wrap;
     }
+
     .footer__col-address {
         margin-bottom: 30px;
         min-width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .page-404__404::after {      
+        background-size: cover;
+        width: 50px;
+        height: 97px;
+        
+    }
+    .settings__tabs {
+        display: block;
+        .tabs {
+            max-width: 100%;
+            margin-bottom: 20px; 
+        }
+    }
+    .settings__line {
+        display: block;
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -15,6 +56,7 @@
     .footer__inner {
         justify-content: space-around;
     }
+
     .footer__col-social {
         margin-top: 30px;
         min-width: 100%;
@@ -32,70 +74,160 @@
         z-index: 1;
         text-align: center;
         padding-bottom: 30px;
+
         a {
             display: block;
             padding: 10px 0;
             border-bottom: 1px solid #fff;
         }
+
         li {
             display: block;
+
             &+li {
                 margin-left: 0;
             }
+
             &:first-child {
                 border-top: 1px solid #fff;
             }
         }
     }
+
     .menu__btn {
         display: block;
         width: 30px;
         cursor: pointer;
         position: absolute;
+
         div {
             background-color: #fff;
             height: 3px;
+
             &+div {
                 margin-top: 5px;
             }
         }
     }
+    .upload__line {
+        display: block;
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    }
+    .upload__inner {
+
+        button {
+            margin-left: 0;
+        }
+    }
+    .upload__inner-content {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .upload__inner-title {
+        padding: 16px 35px 18px;
+    }
+}
+
+@media (max-width: 745px) {
+    .page-404__404{
+        font-size: 200px;
+        line-height: 200px;
+    }
+
+    .page-404__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .page-404__text {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .page-404__link {
+        padding: 10px 30px 8px;
+    }
 }
 
 @media (max-width: 640px) {
+
     .notification-box,
     .message-box {
         display: none;
     }
+
     .circle__menu {
         right: auto;
         left: 0;
         z-index: 5;
     }
 }
+@media (max-width: 600px) {
+    .page-404__inner {
+        padding: 0 15px;
+    }
+    .page-404__404{
+        font-size: 120px;
+        line-height: 120px;
+    }
+    .page-404__404::after {
+        margin-left: 0;
+        top: 16px;
+    }
+    .page-404__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
 
+    .page-404__text {
+      
+    }
+}
 @media (max-width: 540px) {
+    .withdrawals__content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .withdrawals__content-items {
+        overflow: scroll;
+    }
+
+    .withdrawals__content-item {
+        min-width: 490px;
+    }
+
     .footer__inner {
         justify-content: flex-start;
     }
+
     .footer__col {
         min-width: 100%;
     }
+
 }
 
 @media (max-width: 520px) {
     .header {
         overflow: hidden;
     }
+
     .menu__btn {
         top: 30px;
+
         div {
             background-color: #000;
         }
     }
+
     .menu__list {
         top: 70px;
     }
+
     .header__btn-menu {
         display: block;
         width: 70px;
@@ -104,6 +236,7 @@
         position: absolute;
         right: 0;
         z-index: 4;
+
         &::before {
             position: absolute;
             top: 50%;
@@ -113,13 +246,16 @@
             color: #fff;
         }
     }
+
     .user__menu {
         top: 59px;
     }
+
     .circle__menu {
         z-index: 5;
         left: -53px;
     }
+
     .header__box {
         height: 70px;
         left: 100%;
@@ -131,17 +267,21 @@
         top: -100px;
         right: 90px;
         left: 70px;
+
         &.active {
             top: 0;
         }
     }
+
     .menu__btn {
         position: absolute;
         top: 24px;
     }
+
     .header__logo {
         margin-left: 60px;
     }
+
     .header__top-inner {
         height: 70px;
     }
@@ -151,8 +291,16 @@
     .user__info {
         display: none;
     }
+
     .user__images {
         margin-right: 0;
+    }
+
+    .about__head{
+        padding: 23px 10px;
+    }
+    .about__inner {
+        padding: 0 10px;
     }
 }
 
@@ -169,6 +317,7 @@
     .user {
         margin-right: 0;
     }
+
     .header__basket {
         margin-right: 10px;
     }
